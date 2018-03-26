@@ -9,8 +9,16 @@ class Triangle
   end
 
   def kind
-    if @side_1 == @side_2 && @side_2 == @side_3
-      :equilateral
+    if @side_1 == @side_2
+      if @side_2 == @side_3
+        :equilateral
+      else
+        :isosceles
+      end
+    elsif @side_2 == @side_3
+      :isosceles
+    else
+      :scalene
     end
   end
 
