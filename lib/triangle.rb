@@ -15,6 +15,8 @@ class Triangle
       else
         :isosceles
       end
+    elsif @side_1 == @side_3
+      :isosceles
     elsif @side_2 == @side_3
       :isosceles
     else
