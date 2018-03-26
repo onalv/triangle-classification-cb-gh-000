@@ -1,3 +1,10 @@
 class Triangle
-  # write code here
+# :equilateral
+# :isosceles
+# :scalene
+
+  
+  class TriangleError < StandardError
+    
+  end
 end
